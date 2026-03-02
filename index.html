@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Analytics System | Data Science Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0; font-size: 32px; letter-spacing: 1px; }
+        .header p { margin-top: 15px; font-size: 18px; color: #ecf0f1; opacity: 0.9; font-weight: 300; }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            display: grid;
+            gap: 25px;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            border-left: 6px solid #3498db;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .card h2 { margin: 0 0 12px 0; font-size: 22px; color: #2c3e50; }
+        .card p { margin: 0; color: #7f8c8d; font-size: 15px; line-height: 1.6; }
+        
+        .card-1 { border-left-color: #3498db; } /* ฟ้า */
+        .card-2 { border-left-color: #e67e22; } /* ส้ม */
+        .card-3 { border-left-color: #1abc9c; } /* เขียวมรกต */
+
+        .footer {
+            margin-top: 60px;
+            font-size: 13px;
+            color: #95a5a6;
+            text-align: center;
+            padding-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+        .highlight { color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Visual Analytics System for Content Effectiveness</h1>
+        <p>วิเคราะห์กลยุทธ์และประสิทธิภาพเนื้อหาเชิงลึกด้วยหลักการ <span class="highlight">Data Science</span></p>
+    </div>
+
+    <div class="container">
+        <a href="va_section1_trend_overview.html" class="card card-1" target="_blank">
+            <h2>ส่วนที่ 1: ภาพรวมแนวโน้มและประสิทธิภาพรายหัวข้อ (Trend Overview)</h2>
+            <p>วิเคราะห์ภาพรวมการเติบโต (Reach/Engagement) และการขับเคลื่อนเนื้อหาในแต่ละหัวข้อหลัก (Topic Contribution) เพื่อระบุแนวโน้มและกระแสความสนใจในระยะยาว</p>
+        </a>
+
+        <a href="va_section2_posttype.html" class="card card-2" target="_blank">
+            <h2>ส่วนที่ 2: กลยุทธ์และประสิทธิภาพตามประเภทโพสต์ (Post Type Strategy)</h2>
+            <p>วิเคราะห์จุดคุ้มทุน (Trade-off Analysis) ระหว่างการเข้าถึงและอัตราส่วนปฏิสัมพันธ์ในแต่ละรูปแบบเนื้อหา (Photos, Links, Videos) เพื่อการวางแผน Content Mix ที่แม่นยำ</p>
+        </a>
+
+        <a href="va_section3_len_time.html" class="card card-3" target="_blank">
+            <h2>ส่วนที่ 3: ประสิทธิภาพตามความยาวแคปชันและช่วงเวลา (Caption Length & Timing)</h2>
+            <p>วิเคราะห์ความสัมพันธ์ระหว่างความยาวของเนื้อหา (Caption Range) และช่วงเวลาในการเผยแพร่ (Timing) ที่ส่งผลต่อประสิทธิภาพสูงสุดในแต่ละวัน</p>
+        </a>
+    </div>
+
+    <div class="footer">
+        Master's Degree Project in Data Science | 2026
+    </div>
+
+</body>
+</html>
